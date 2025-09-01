@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Translator</title>
+</head>
+<body>
+    <h1>PDF Translator</h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <label for="pdf_file">Upload PDF File:</label><br>
+        <input type="file" id="pdf_file" name="pdf_file" accept=".pdf"><br><br>
+        <button type="submit">Translate</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
